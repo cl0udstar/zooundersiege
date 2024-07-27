@@ -8,7 +8,7 @@ const arrayData = [
         color: "linear-gradient(-135deg, #c8e4b2, #7eaa92)",
         imageWidth: "300px",
         imageHeight: "350px",
-        para: "You begin your journey by walking through the deep dark forest. Suddenly everything goes silent. A tall man with grey hair stops you in your path! It is Major X, the leader of the Data Agents, “I am here to test your powers of code breaking”.",
+        para: "You begin your mission by looking at some of the data in the zoo. Is it realistic or has it already been tampered with by the hackers.",
         link: "../puzzles/puzzle-1.html",
         lock: "lock1",
         frontFeatures: "front1"
@@ -21,7 +21,7 @@ const arrayData = [
         color: "linear-gradient(-135deg, #c8e4b2, #7eaa92)",
         imageWidth: "300px",
         imageHeight: "350px",
-        para: "While walking along a steep, winding path, a gust of wind knocks you down near Lilias Bridge. Oblivious to your presence, she chats excitedly on her phone about meeting other Vikings. As she pockets her phone, it falls out unnoticed. You pick it up and discover she's logged into her Vikingstagram account.",
+        para: "Help! You now visit the zoo and it is in complete chaos. There are enclosures wide open and there are animals everywhere. There are also no lights working, water is running low and communications are out.",
         link: "../puzzles/puzzle-2.html",
         lock: "lock2",
         frontFeatures: "front2"
@@ -34,7 +34,7 @@ const arrayData = [
         color: "linear-gradient(-135deg, #c8e4b2, #7eaa92)",
         imageWidth: "300px",
         imageHeight: "350px",
-        para: "You make it to the giant mountains that have been in the distance for what feels like forever. Jakub Grey – The data viking stops and begins to talk to you. “If you are a true warrior then prove that you can throw an axe like me, then I will let you pass”",
+        para: "Now that the animals are safely locked back in their enclosures, we need to fix all the systems that the hackers have destroyed.",
         link: "../puzzles/puzzle-3.html",
         lock: "lock3",
         frontFeatures: "front3"
@@ -47,7 +47,7 @@ const arrayData = [
         color: "linear-gradient(-135deg, #ec8f5e, #f1eb90)",
         imageWidth: "300px",
         imageHeight: "350px",
-        para: "You have reached the ancient Viking village of Fjordhelm! However, to get to the Viking base which is where the laptop is, you need to take a boat. Between you and the base sits Evelyn Scott – the data V.I.K.I.N.G in her longboat.",
+        para: "Next, we must get zoo wide IOT system back operational, so that the sensor readings can inform the keepers what is happening.",
         link: "../puzzles/puzzle-4.html",
         lock: "lock4",
         frontFeatures: "front4"
@@ -60,7 +60,7 @@ const arrayData = [
         color: "linear-gradient(-135deg, #ec8f5e, #f1eb90)",
         imageWidth: "300px",
         imageHeight: "350px",
-        para: "You have finally reached the secret base at Fjordhelm. You try to enter through the giant main door, but it is locked. You notice a keypad to the right of the door. You are about to turn away but notice a piece of paper hidden behind the keypad.",
+        para: "Quick, the hacker has ramped up the temperature of the reptile house to a hazardous level, the animals are in grave danger!",
         link: "../puzzles/puzzle-5.html",
         lock: "lock5",
         frontFeatures: "front5"
@@ -73,7 +73,7 @@ const arrayData = [
         color: "linear-gradient(-135deg, #ec8f5e, #f1eb90)",
         imageWidth: "300px",
         imageHeight: "350px",
-        para: "You have made it into the lair! Congratulations! You notice Data V.I.K.I.N.G Vi Banks’ laptop sitting on the countertop, and you know that this has the secret evil plan location on it, so you need to access the file and send it back to Major X, then destroy it.",
+        para: "We are almost there. We have made it to the zoo headquarters.",
         link: "../puzzles/puzzle-6.html",
         lock: "lock6",
         frontFeatures: "front6"
