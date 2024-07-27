@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@300;400&display=swap');
+
+.container {
+    min-width: 100%;
+    min-height: 80vh;
+    background-color: #091921;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.post {
+    width: 500%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    padding: 15px;
+    padding-top: 85px;
+    padding-bottom: 100px;
+    border-radius: 15px;
+    border-color: black;
+    box-sizing: border-box;
+/*     font-family: 'Blinker', sans-serif; */
+    color: white;
+    position: relative;
+    overflow: hidden; /* Ensure content does not overflow */
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+.profile-detail {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align children to the start */
+}
+
+.profile-detail .p-img {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #c31432;
+    border-radius: 50%;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.profile-detail .p-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.profile-detail .name {
+    font-size: 1.5rem;
+}
+
+.more i {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.post-img {
+    height: 70%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.post-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.post-img img:nth-child(6) {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.reactions {
+    margin-top: 1rem;
+}
+
+.reactions i {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.react-links i {
+    margin-right: 10px;
+}
+
+i.fa-heart:hover {
+    color: red;
+}
+
+.caption {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row; /* Keep items in a row */
+    align-items: flex-start; /* Align items to the start */
+}
+
+.caption .profile-name {
+    font-size: 1rem;
+    font-weight: 800;
+    margin-right: 15px; /* Add margin between profile name and caption */
+    align-self: flex-start; /* Align profile name to the start */
+}
+
+.caption .post-cap {
+    font-size: 0.9rem;
+}
+
+.container {
+    position: relative;
+}
+
+.instagram-logo {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px; /* Adjust size as needed */
+}
+
+.post {
+    margin-top: 80px; /* Adjust spacing between logo and post */
+}
+
+.button-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #091921;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.button-container button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+/* Updated CSS for dot navigation */
+.dot-navigation {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999; /* Ensure dots are on top of the images */
+}
+
+.dot-navigation .dot {
+    height: 20px;
+    width: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot-navigation .dot.active {
+    background-color: white;
+}
+
+.puzzle_container{
+    margin: 2% 10%;
+    padding: 5%;
+    width: 80%;
+    border-radius: 20px;
+    background-color: #091921;
+  }
+
+.puzzle_container2 {
+	margin: 2% 10%;
+	padding: 0 5% 5% 5%;
+	border-radius: 20px;
+	background-color: white;
+	position: relative;
+}
+
+.puzzle_container2 .puzzle-q{
+	text-align: center;
+}
+
+.check-btn {
+    background: #EEEDEB;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    box-shadow: 0 0 20px 2px #B4B4B8;
+}
+
+.puzzle-q1, .puzzle-q2, .puzzle-q3,
+.puzzle-q4, .puzzle-q5, .puzzle-q6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.puzzle-q1 p, .puzzle-q2 p, .puzzle-q3 p,
+.puzzle-q4 p, .puzzle-q5 p, .puzzle-q6 p {
+    padding: 5% 0 0 0;
+    text-align: center;
+}
+
+.puzzle-q1 #result1, .puzzle-q2 #result2, .puzzle-q3 #result3,
+.puzzle-q4 #result4, .puzzle-q5 #result5, .puzzle-q6 #result6 {
+    padding: 0 0 10px 0;
+    text-align: center;
+}
+
+.q-answer {
+    padding: 10px;
+}
+
+.user-input {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.user-input::placeholder{
+    text-align: center;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+
+.keypad-image-small {
+    cursor: pointer;
+    position: absolute;
+    width: 150px;
+    border-radius: 10px;
+    transform: translateX(-50%) rotate(15deg);
+    left: 91%;
+    top: 3%;
+    z-index: 0;
+    box-shadow: 1px 1px 10px 1px #000;
+}
+
+.dark-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    display: none;
+}
+
+.keypad-image-big {
+    display: none;
+    cursor: pointer;
+    width: 1000px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.dark-overlay {
+    display: none;
+}
+
+p{
+    padding-top: 40px ;
+    text-align: center;
+
+}
