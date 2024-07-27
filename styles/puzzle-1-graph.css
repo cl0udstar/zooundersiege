@@ -1,44 +1,115 @@
-.table-container {
-    background-color: #ffffff;
+* {
+    user-select: none;
+}
+
+/* CSS for styling the graph container */
+#graph-container {
+    width: 600px;
+    height: 500px;
+    position: relative;
+    margin: 100px auto 0px auto;
+    /* border: 1px solid white;  */
+}
+
+/* CSS for styling the points */
+.point {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* CSS for styling the lines */
+.line {
+    stroke: black;
+    stroke-width: 2px;
+}
+
+/* CSS for styling the text */
+.text {
+    font-size: 12px;
+    fill: black;
+    text-anchor: middle;
+}
+
+/* CSS for styling the grid lines */
+.grid-line {
+    stroke: lightgrey;
+}
+
+
+.answer_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check-btn {
+    background: #EEEDEB;
+    border: 2px solid;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow-x: auto; /* Ensure table can be scrolled horizontally if it overflows */
-    width: 90%;
-    max-width: 800px;
-    margin: 20px auto;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    box-shadow: 0 0 20px 2px #B4B4B8;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+.puzzle-q1, .puzzle-q2, .puzzle-q3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 0 20px;
 }
 
-th, td {
-    padding: 10px;
+.puzzle-q1 p, .puzzle-q2 p, .puzzle-q3 p {
     text-align: center;
-    white-space: nowrap; /* Ensure that content doesn't wrap and maintains its width */
 }
 
-th {
-    background-color: #4CAF50;
-    color: white;
+.puzzle-q1 #result1, .puzzle-q2 #result2, .puzzle-q3 #result3 {
+    padding: 0 0 10px 0;
+    text-align: center;
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
+.q-answer {
+    padding: 10px;
 }
 
-tr:hover {
-    background-color: #ddd;
+.user-input {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 10px;
+    text-align: center;
 }
 
-.header-row th {
-    background-color: #333;
+.user-input::placeholder{
+    text-align: center;
+    font-family: inherit;
+    font-size: inherit;
 }
 
-/* Media Query for smaller screens */
-@media (max-width: 600px) {
-    th, td {
-        padding: 5px;
+.check-result {
+    text-align: center;
+    padding: 10px;
+}
+
+.check-result #result1 {
+    padding: 0 0 10px 0;
+    text-align: center;
+}
+
+@media (max-width: 1250px) {
+    .answer_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
     }
 }
