@@ -20,15 +20,15 @@ function changeColor(radio, color) {
 // Predefined sequence of checked radio buttons
 const correctSequence = [
     ['route1-2'], 
-    ['route2-1'], 
+    ['route2-2'], 
     ['route3-1'], 
-    ['route4-1'], 
-    ['route5-1', 'route5-2'], 
+    ['route4-2'], 
+    ['route5-2'], 
     ['route6-2'], 
-    ['route7-1', 'route7-2'], 
-    ['route8-2'], 
+    ['route7-1'], 
+    ['route8-1'], 
     ['route9-1'], 
-    ['route10-1']
+    ['route10-2']
 ];
 
 var Q1Check = false;
@@ -67,10 +67,10 @@ function checkSequence() {
         Q4Check = true;
         checkCompletion();
         
-        result.textContent = "Congratulations, Agent! You've found the best route through the checkpoints! The sail towards the village will be smooth now!";
+        result.textContent = "Congratulations Agent! You've expertly matched the optimal sensors to each location. Your keen instincts and precision are unmatched!";
         result.style.color = "green";
     } else {
-        result.textContent = "The route to the village will be full of winds, keep exploring, there is a better route!";
+        result.textContent = "Attention, Agent! It appears the sensors are not optimally selected. Let's reassess and ensure each location has the perfect match. Your mission isn't over yet!";
         result.style.color = "red";
     }
     result.style.display = "block";
@@ -104,12 +104,12 @@ function checkAnswerQ1() {
         Q1Check = true;
         checkCompletion();
         
-        result.textContent = "Congratulations Agent, your stealth and cunning would make even Viking raiders bow in awe.";
+        result.textContent = "Excellent work, Agent! You've correctly identified the product range with the highest mean strength. Your analytical skills are top-notch!";
         result.style.color = "green";
         keyInputQ1.disabled = true;
         keyInputQ1.style.background = "#C8E4B2";
     } else {
-        result.textContent = "Agent, I expect more from you. Keep exploring the data!";
+        result.textContent = "Alert, Agent! The selected product range does not have the highest mean strength. Let's review the data and find the true leader. Your mission continues!";
         result.style.color = "red";
         keyInputQ1.style.background = "#FF7676";
     }
@@ -134,12 +134,12 @@ function checkAnswerQ2() {
         Q2Check = true;
         checkCompletion();
         
-        result.textContent = "Well done, Agent. Your finesse rivals that of the stealthiest Viking scouts.";
+        result.textContent = "Outstanding, Agent! You've accurately calculated the difference between the lowest and highest Alpha values. Your precision is impressive!";
         result.style.color = "green";
         keyInputQ2.disabled = true;
         keyInputQ2.style.background = "#C8E4B2";
     } else {
-        result.textContent = "Agent, it seems you've hit a snag in your Viking escapade. Time to regroup and reassess.";
+        result.textContent = "Attention, Agent! The difference between the lowest and highest Alpha values seems incorrect. Let's re-evaluate the data to find the accurate range. Keep pushing forward!";
         result.style.color = "red";
         keyInputQ2.style.background = "#FF7676";
     }
@@ -164,12 +164,12 @@ function checkAnswerQ3() {
         Q3Check = true;
         checkCompletion();
         
-        result.textContent = "Nicely done Agent! Your spy game could outsmart even the fiercest Viking warriors.";
+        result.textContent = "Fantastic, Agent! You've correctly pinpointed the location where the difference between Alpha and Beta is the greatest. Your sharp analysis is commendable!";
         result.style.color = "green";
         keyInputQ3.disabled = true;
         keyInputQ3.style.background = "#C8E4B2";
     } else {
-        result.textContent = "Looks like you've stumbled into a Viking hornet's nest, Agent. Try again!";
+        result.textContent = "Agent! The identified location does not have the greatest difference between Alpha and Beta. Let's re-examine the data and find the correct location. Your mission is not yet complete!";
         result.style.color = "red";
         keyInputQ3.style.background = "#FF7676";
     }
