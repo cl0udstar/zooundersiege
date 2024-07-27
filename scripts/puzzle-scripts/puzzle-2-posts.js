@@ -80,6 +80,7 @@ var Q3Check = false;
 var Q4Check = false;
 var Q5Check = false;
 var Q6Check = false;
+var Q7Check = false
 
 ////////////////////////////////////////////////
 // Question 1
@@ -96,7 +97,7 @@ function checkAnswerQ1() {
     var userAnswer = document.getElementById("userAnswerQ1").value.trim().toLowerCase();
     var result = document.getElementById("result1");
 
-    if (userAnswer === "fjordhelm") {
+    if (userAnswer === "polar bear") {
         Q1Check = true;
         checkCompletion();
         
@@ -105,7 +106,7 @@ function checkAnswerQ1() {
         keyInputQ1.disabled = true;
         keyInputQ1.style.background = "#C8E4B2";
     } else {
-        result.textContent = "Agent, use this hint: Starts with a 'F' and ends with 'helm'";
+        result.textContent = "Agent, use this hint: It loves to swim and hunt seals.";
         result.style.color = "red";
         keyInputQ1.style.background = "#FF7676";
     }
@@ -129,7 +130,7 @@ function checkAnswerQ2() {
     var userAnswer = document.getElementById("userAnswerQ2").value.trim().toLowerCase();
     var result = document.getElementById("result2");
 
-    if (userAnswer === "fjordhelm") {
+    if (userAnswer === "cheetah") {
         Q2Check = true;
         checkCompletion();
         
@@ -138,7 +139,7 @@ function checkAnswerQ2() {
         keyInputQ2.disabled = true;
         keyInputQ2.style.background = "#C8E4B2";
     } else {
-        result.textContent = "Agent, use this hint: A place with Fjords";
+        result.textContent = "Agent, use this hint: It has spots and incredible speed to chase down its prey.";
         result.style.color = "red";
         keyInputQ2.style.background = "#FF7676";
     }
@@ -162,7 +163,7 @@ function checkAnswerQ3() {
     var userAnswer = document.getElementById("userAnswerQ3").value.trim().toLowerCase();
     var result = document.getElementById("result3");
 
-    if (userAnswer === "20" || userAnswer === "twenty" || userAnswer === "20 hours" || userAnswer === "twenty hours" || userAnswer === "20h") {
+    if (userAnswer === "crocodile" ) {
         Q3Check = true;
         checkCompletion();
         
@@ -171,7 +172,7 @@ function checkAnswerQ3() {
         keyInputQ3.disabled = true;
         keyInputQ3.style.background = "#C8E4B2";
     } else {
-        result.textContent = "Agent, use this hint: Greater than 15 'Hours'";
+        result.textContent = "Agent, use this hint: It snaps its teeth and often basks in the sun near rivers and swamps. ";
         result.style.color = "red";
         keyInputQ3.style.background = "#FF7676";
     }
@@ -195,7 +196,7 @@ function checkAnswerQ4() {
     var userAnswer = document.getElementById("userAnswerQ4").value.trim().toLowerCase();
     var result = document.getElementById("result4");
 
-    if (userAnswer === "sunny") {
+    if (userAnswer === "owl") {
         Q4Check = true;
         checkCompletion();
         
@@ -204,7 +205,7 @@ function checkAnswerQ4() {
         keyInputQ4.disabled = true;
         keyInputQ4.style.background = "#C8E4B2";
     } else {
-        result.textContent = "Agent, use this hint: 'heat'";
+        result.textContent = "Agent, use this hint:  It can rotate it’s head right around.";
         result.style.color = "red";
         keyInputQ4.style.background = "#FF7676";
     }
@@ -228,7 +229,7 @@ function checkAnswerQ5() {
     var userAnswer = document.getElementById("userAnswerQ5").value.trim().toLowerCase();
     var result = document.getElementById("result5");
 
-    if (userAnswer === "8" || userAnswer === "eight" || userAnswer === "8 villages" || userAnswer === "eight villages") {
+    if (userAnswer === "shark") {
         Q5Check = true;
         checkCompletion();
         
@@ -237,7 +238,7 @@ function checkAnswerQ5() {
         keyInputQ5.disabled = true;
         keyInputQ5.style.background = "#C8E4B2";
     } else {
-        result.textContent = "Agent, use this hint: Greater than 5 but less than 10";
+        result.textContent = "Agent, use this hint: It swims in the ocean and is known for being a top predator";
         result.style.color = "red";
         keyInputQ5.style.background = "#FF7676";
     }
@@ -261,7 +262,7 @@ function checkAnswerQ6() {
     var userAnswer = document.getElementById("userAnswerQ6").value.trim().toLowerCase();
     var result = document.getElementById("result6");
 
-    if (userAnswer === "565" || userAnswer === "565 miles" || userAnswer === "five hundred and sixty five" || userAnswer === "five hundred and sixty five miles" || userAnswer === "five hundred sixty five" || userAnswer === "five hundred sixty five miles" || userAnswer === "five six five" || userAnswer === "five six five miles") {
+    if (userAnswer === "tarantula" ) {
         Q6Check = true;
         checkCompletion();
         
@@ -270,7 +271,7 @@ function checkAnswerQ6() {
         keyInputQ6.disabled = true;
         keyInputQ6.style.background = "#C8E4B2";
     } else {
-        result.textContent = "Agent, use this hint: Add up the distance traveled in 'Miles'";
+        result.textContent = "Agent, use this hint: A huge spider!";
         result.style.color = "red";
         keyInputQ6.style.background = "#FF7676";
     }
