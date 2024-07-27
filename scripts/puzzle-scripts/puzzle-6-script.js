@@ -9,7 +9,7 @@ let points = [];
 
 // Define the correct coordinates for the star shape
 const correctCoordinates = [
-    { x: 3, y: 2 },
+    { x: 2, y: 1 },
     { x: 4, y: 7 },
     { x: 0, y: 10 },
     { x: 5, y: 10 },
