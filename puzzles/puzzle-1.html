@@ -5,14 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Escape Room | Mission 1</title>
         <link rel="stylesheet" href="../styles/puzzle-page-default-style.css">
-        <link rel="stylesheet" type="text/css" href="../styles/puzzle-1-new-style.css">
+        <link rel="stylesheet" type="text/css" href="../styles/puzzle-1-graph.css">
         <link rel="stylesheet" href="../styles/default-style.css">
-        <link rel="stylesheet" href="../styles/animal-table.css"> <!-- Link to the new CSS file -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="icon" type="png" href="../assets/backgrounds/DATA_Logo.png">
+        <script src="..//scripts/progress.js"></script>
     </head>
     <body id="text">
         <div class="header">
@@ -27,112 +28,49 @@
             </div>
         </div>
         <div class="header-text">
-            <p>Our IOT system is an important part of our zoo’s technology it monitors lots of different
-                things throughout the zoo and returns the data into our Data Centre at the University of
-                Edinburgh.
-                We also have IOT heart monitors on our animals to check that they are healthy. </p>
+            <p>Major X tells you that there are a few secret numbers you will need to know for your journey. There is a different number every hour, and you need to know the number at 2pm, 6pm and 10pm. Use the graph below to find the numbers at each time and enter them at the bottom of the page. Good luck!</p>
         </div>
         <div class="puzzle_container">
-            <p>Analyse the data in the graph and answer the questions.</p>
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr class="header-row">
-                            <th>Time (pm)</th>
-                            <th></th>
-                            <th>1:00</th>
-                            <th>2:00</th>
-                            <th>3:00</th>
-                            <th>4:00</th>
-                            <th>5:00</th>
-                            <th>6:00</th>
-                            <th>7:00</th>
-                            <th>8:00</th>
-                            <th>9:00</th>
-                            <th>10:00</th>
-                            <th>11:00</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Red Deer</td>
-                            <td>40</td>
-                            <td>45</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>45</td>
-                            <td>50</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>45</td>
-                            <td>45</td>
-                            <td>40</td>
-                            <td>45</td>
-                        </tr>
-                        <tr>
-                            <td>Horse</td>
-                            <td>35</td>
-                            <td>35</td>
-                            <td>40</td>
-                            <td>35</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>45</td>
-                            <td>45</td>
-                            <td>50</td>
-                        </tr>
-                        <tr>
-                            <td>Cow</td>
-                            <td>50</td>
-                            <td>55</td>
-                            <td>60</td>
-                            <td>55</td>
-                            <td>55</td>
-                            <td>65</td>
-                            <td>70</td>
-                            <td>70</td>
-                            <td>80</td>
-                            <td>70</td>
-                            <td>60</td>
-                            <td>60</td>
-                        </tr>
-                        <tr>
-                            <td>Tiger</td>
-                            <td>60</td>
-                            <td>60</td>
-                            <td>60</td>
-                            <td>60</td>
-                            <td>60</td>
-                            <td>85</td>
-                            <td>80</td>
-                            <td>75</td>
-                            <td>70</td>
-                            <td>65</td>
-                            <td>60</td>
-                            <td>65</td>
-                        </tr>
-                        <tr>
-                            <td>Meerkat</td>
-                            <td>110</td>
-                            <td>110</td>
-                            <td>100</td>
-                            <td>95</td>
-                            <td>105</td>
-                            <td>115</td>
-                            <td>110</td>
-                            <td>90</td>
-                            <td>100</td>
-                            <td>105</td>
-                            <td>105</td>
-                            <td>100</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <p></p> 
+            <div id="graph-container">
+            <svg id="graph-svg" width="100%" height="100%" viewBox="0 0 500 550"></svg>
+            </div>
+            <div class="answer_container">
+                <div class="puzzle-q1">
+                    <p>At 2pm</p>
+                    <div class="q-answer">
+                        <input type="text" placeholder="Your answer..." id="userAnswerQ1" class="user-input" autocomplete="off">  
+                    </div>
+                </div>
+
+                <div class="puzzle-q2">
+                    <p>At 6pm</p>
+                    <div class="q-answer">
+                        <input type="text" placeholder="Your answer..." id="userAnswerQ2" class="user-input" autocomplete="off">  
+                    </div>
+                </div>
+
+                <div class="puzzle-q3">
+                    <p>At 10pm</p>
+                    <div class="q-answer">
+                        <input type="text" placeholder="Your answer..." id="userAnswerQ3" class="user-input" autocomplete="off">  
+                    </div>
+                </div>
+            </div>
+
+            <div class="check-result">
+                <p id="result1" style="display: none;"></p>
+
+                <div class="answer-check" onclick="checkAnswerQ1()">
+                    <button class="check-btn" id="check-q1">Check Answer</button>
+                </div>
+            </div>
+
+            <div class="next-puzzle" id="next-puzzle">
+                <a class="next-puzzle-btn" href="./puzzle-selection.html">Next: Mission 2</a>
             </div>
         </div>
+
         <script src="../scripts/puzzle-scripts/puzzle-1-graph.js"></script>
         <script src="../scripts/cookies/accessibility-cookie.js"></script>
     </body>
