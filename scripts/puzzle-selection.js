@@ -86,7 +86,7 @@ const arrayData = [
         color: "linear-gradient(-135deg, #dc0000, #850000, #ec8f5e)",
         imageWidth: "300px",
         imageHeight: "350px",
-        para: "You have made it into the laptop! You see the file on the desktop and click on it. All you have to do now is decode the file to uncover the evil meeting location.",
+        para: "We need to get the Zoo’s IOT system back up and running and protected. You can help us.",
         link: "../puzzles/puzzle-7.html",
         lock: "lock7",
         frontFeatures: "front7"
