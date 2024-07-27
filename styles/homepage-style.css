@@ -1,24 +1,13 @@
 /* Page style - Home */
-.puzzle-box{
+.puzzle-box {
     position: relative;
     background-color: #ffe3a7;
     border: 2px solid #0C0C0C;
     border-radius: 15px;
     min-height: 500px;
     height: auto;
-    margin: 0 20px 0 20px;
+    margin: 0 20px;
     padding-bottom: 70px;
-}
-
-.background-logo{
-    background-image: url('../assets/backgrounds/DATA_Logo.png');
-    background-size: 250px;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    opacity: 0.125;
 }
 
 .img-text-container {
@@ -34,33 +23,44 @@
     padding: 1em;
 }
 
-
-.puzzle-box .puzzle-box-button{
+.puzzle-box .button-container {
     position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.puzzle-box .puzzle-box-audio{
-    position: absolute;
-    bottom: 3px;
-    right: -3%;
-    transform: translate(-50%, -50%);
+    bottom: 10px;
+    left: 0;
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.puzzle-box .puzzle-box-button .start-btn, .puzzle-box .puzzle-box-audio .audio-btn{
+.puzzle-box .start-container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.puzzle-box .audio-container {
+    display: flex;
+    gap: 5px; /* Adjust gap as needed */
+    position: absolute;
+    right: 10px;
+}
+
+.puzzle-box .button,
+.puzzle-box .start-container .start-btn,
+.puzzle-box .audio-container .audio-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     background: black;
     border: none;
     border-radius: 10px;
-    padding: 10px 15px;
+    width: 70px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
     cursor: pointer;
     color: #FEFFE2;
     box-shadow: 1px 1px 10px 2px #0C0C0C;
     text-decoration: none;
-    margin: 0 5px 0 5px;
+    margin: 0 5px; /* Adjust margin as needed */
+    font-size: 16px; /* Ensure consistent font size */
 }
