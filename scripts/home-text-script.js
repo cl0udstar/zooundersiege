@@ -29,7 +29,6 @@ textTypingEffect(div, text1, 0, function() {
     console.log(text1Finished);
 
     if (text1Finished) {
-        // div.innerHTML += "<br>";
         textTypingEffect(div, text2, 0, function() {
             text2Finished = true;
             console.log(text2Finished);
