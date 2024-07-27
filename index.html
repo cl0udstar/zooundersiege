@@ -8,6 +8,8 @@
     <title>Escape Room | Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="png" href="assets/backgrounds/DATA_Logo.png">
@@ -43,8 +45,18 @@
         </div>
 
         <div class="puzzle-box-audio">
-            <a class="start-btn" id="start" href="#">Start</a>
+            <a class="audio-btn" id="audio-btn"><i class="fa-solid fa-volume-high"></i></a>
         </div>
+    
+        <audio id="audio" src="./assets/Goosebumps.mp3"></audio>
+    
+        <script>
+            document.getElementById('audio-btn').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent the default anchor behavior
+                var audio = document.getElementById('audio');
+                audio.play();
+            });
+        </script>
     </div>
     
     <script src="./scripts/cookies/accessibility-cookie.js"></script>
