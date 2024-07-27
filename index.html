@@ -45,16 +45,35 @@
         </div>
 
         <div class="puzzle-box-audio">
-            <a class="audio-btn" id="audio-btn"><i class="fa-solid fa-volume-high"></i></a>
+            <a class="audio-btn" id="play-pause-btn"><i class="fa-solid fa-volume-mute"></i></a>
+            <a class="audio-btn" id="reset-btn"><i class="fa-solid fa-arrow-rotate-left"></i></a>
         </div>
     
         <audio id="audio" src="./assets/Goosebumps.mp3"></audio>
     
         <script>
-            document.getElementById('audio-btn').addEventListener('click', function(event) {
+            var audio = document.getElementById('audio');
+            audio.volume = 0.1; // Set the fixed volume to 0.1
+    
+            var playPauseBtn = document.getElementById('play-pause-btn');
+            var resetBtn = document.getElementById('reset-btn');
+    
+            playPauseBtn.addEventListener('click', function(event) {
                 event.preventDefault(); // Prevent the default anchor behavior
-                var audio = document.getElementById('audio');
-                audio.play();
+                if (audio.paused) {
+                    audio.play();
+                    playPauseBtn.innerHTML = '<i class="fa-solid fa-volume-high"></i>'; // Change icon to volume high
+                } else {
+                    audio.pause();
+                    playPauseBtn.innerHTML = '<i class="fa-solid fa-volume-mute"></i>'; // Change icon to mute
+                }
+            });
+    
+            resetBtn.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent the default anchor behavior
+                audio.pause();
+                audio.currentTime = 0; // Reset the audio to the beginning
+                playPauseBtn.innerHTML = '<i class="fa-solid fa-volume-mute"></i>'; // Reset icon to mute
             });
         </script>
     </div>

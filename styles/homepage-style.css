@@ -42,25 +42,12 @@
     transform: translate(-50%, -50%);
 }
 
-.puzzle-box .puzzle-box-button .start-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: black;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 15px;
-    cursor: pointer;
-    color: #FEFFE2;
-    box-shadow: 1px 1px 10px 2px #0C0C0C;
-    text-decoration: none;
-}
-
 .puzzle-box .puzzle-box-audio{
     position: absolute;
-    bottom: 5px;
-    right: 0%;
+    bottom: 3px;
+    right: -3%;
     transform: translate(-50%, -50%);
+    display: flex;
 }
 
 .puzzle-box .puzzle-box-button .start-btn, .puzzle-box .puzzle-box-audio .audio-btn{
@@ -75,4 +62,5 @@
     color: #FEFFE2;
     box-shadow: 1px 1px 10px 2px #0C0C0C;
     text-decoration: none;
+    margin: 0 5px 0 5px;
 }
