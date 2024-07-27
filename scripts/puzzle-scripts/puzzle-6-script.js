@@ -10,16 +10,16 @@ let points = [];
 // Define the correct coordinates for the star shape
 const correctCoordinates = [
     { x: 2, y: 1 },
-    { x: 4, y: 7 },
-    { x: 0, y: 10 },
-    { x: 5, y: 10 },
-    { x: 7, y: 15 },
-    { x: 9, y: 10 },
-    { x: 14, y: 10 },
-    { x: 10, y: 7 },
-    { x: 11, y: 2 },
-    { x: 7, y: 5 },
-    { x: 3, y: 2 },
+    { x: 7, y: 13 },
+    { x: 8, y: 13 },
+    { x: 9, y: 13 },
+    { x: 12, y: 1 },
+    { x: 10, y: 1 },
+    { x: 8, y: 6 },
+    { x: 7, y: 6 },
+    { x: 6, y: 6 },
+    { x: 4, y: 1 },
+    { x: 2, y: 1 },
 ];
 
 
@@ -135,7 +135,7 @@ svg.setAttribute('viewBox', '0 0 450 400'); // Adjust the values as needed for z
                 correctMessage.setAttribute('class', 'correct-message');
                 graphContainer.parentNode.insertBefore(correctMessage, graphContainer.nextSibling);
             }
-            correctMessage.textContent = "Correct! The 'star' shape has been drawn successfully, well done agent!";
+            correctMessage.textContent = "Correct! The 'Alpaca' shape has been drawn successfully, well done agent!";
         } else {
             let errorLabel = graphContainer.parentNode.querySelector('.error-message');
             if (!errorLabel) {
@@ -199,7 +199,7 @@ function checkAnswerSecondPuzzle() {
     const answer = document.getElementById('answer').value.trim().toLowerCase();
     const feedback = document.getElementById('feedback');
 
-    if (answer === "star") {
+    if (answer === "alpaca") {
         feedback.textContent = "Correct, well done agent!";
         feedback.classList.remove('error-message'); // Remove error message class
         feedback.classList.add('success-message'); // Add success message class
@@ -218,7 +218,7 @@ function checkAnswerSecondPuzzle() {
         feedback.classList.add('error-message'); // Add error message class
         feedback.classList.remove('success-message'); // Remove success message class
         // You can provide a hint here, e.g., display a hint message
-        document.getElementById('hint').textContent = "Hint: A quote from Vi: 'Nothing beats kicking back after dusk, eyes glued to those twinkling specks painting the night.'";
+        document.getElementById('hint').textContent = "Hint: Search for a animal with a slender neck and a woolly body, reminiscent of a certain fluffy creature.'";
         document.getElementById('answer').style.background = "#FF7676";
     }
 }
