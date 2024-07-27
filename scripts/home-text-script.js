@@ -1,15 +1,13 @@
 const div = document.querySelector(".home-text");
-const text1 = "Agent, we have heard whispers of an evil plot from the data V.I.K.I.N.G.S over in Fjordhelm, and we need you to help us. Your objective is to get hold of their computer that holds their evil plan and destroy it.";
-const text2 = "You need to participate in an adventure through the mountains and the seas, and prove your knowledge to the mischievous vikings in your way.";
-const text3 = "This is not just any escape; it's a test of your skills in observation, analysis and problem-solving.";
-const text4 = "Once you reach the viking base, you will need to sneakily search through their highly secured lair until you have sight of the computer.";
-const text5 = "This is not just any escape; it's a test of your skills in observation, analysis, and problem-solving. Your training as an Agent of Data has prepared you for this moment. Trust in your abilities, use every skill at your disposal, and make your escape from the evil V.I.K.I.N.G.S' lair a success. Good luck, Agent. The fate of the world rests in your hands.";
+const text1 = "Agents, we have a ruthless hacker on our hands! The Cyber Security Data Division has been monitoring a series of breaches, and we've iden?fied the zoo’s IOT sensors technology as a cri?cal target. We need your excep?onal skills in data analysis to save the animals and restore order.";
+const text2 = "Your mission is of the utmost importance. The hacker's ac?ons have caused chaos throughout the zoo, and it's up to you to save the animals and bring the system back under control.";
+const text3 = "This is not just any mission, we need data experts – and we think you are exactly what we need! Your experience of collec?ng, analysing and visualising data has prepared you for this moment. Trust in your abili?es, use every skill and resource at your disposal, and bring the zoo back to safety.";
+const text4 = "Good luck, Agents. The fate of the zoo rests in your hands.";
 
 let text1Finished = false;
 let text2Finished = false;
 let text3Finished = false;
 let text4Finished = false;
-let text5Finished = false;
 
 function textTypingEffect(element, text, i = 0, callback = null) {
     element.innerHTML += text[i];
@@ -45,13 +43,6 @@ textTypingEffect(div, text1, 0, function() {
                         textTypingEffect(div, text4, 0, function() {
                             text4Finished = true;
                             console.log(text4Finished);
-
-                            if (text4Finished) {
-                                textTypingEffect(div, text5, 0, function() {
-                                    text5Finished = true;
-                                    console.log(text5Finished);
-                                });
-                            }
                         });
                     }
                 });
