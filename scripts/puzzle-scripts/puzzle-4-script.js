@@ -100,7 +100,7 @@ function checkAnswerQ1() {
     var userAnswer = document.getElementById("userAnswerQ1").value.trim().toLowerCase();
     var result = document.getElementById("result1");
 
-    if (userAnswer === "190" || userAnswer === "190 miles" || userAnswer === "190miles" || userAnswer === "190 miles per hour" || userAnswer === "190 mph" || userAnswer === "190mph") {
+    if (userAnswer === "beta") {
         Q1Check = true;
         checkCompletion();
         
@@ -109,7 +109,7 @@ function checkAnswerQ1() {
         keyInputQ1.disabled = true;
         keyInputQ1.style.background = "#C8E4B2";
     } else {
-        result.textContent = "Alert, Agent! The selected product range does not have the highest mean strength. Let's review the data and find the true leader. Your mission continues!";
+        result.textContent = "Alert, Agent! The selected product range does not have the highest mean strength. Let's review the data and find the true leader. Your mission continues! (Hint lowest negative value)";
         result.style.color = "red";
         keyInputQ1.style.background = "#FF7676";
     }
@@ -130,7 +130,7 @@ function checkAnswerQ2() {
     var userAnswer = document.getElementById("userAnswerQ2").value.trim().toLowerCase();
     var result = document.getElementById("result2");
 
-    if (userAnswer === "460" || userAnswer === "460 miles" || userAnswer === "460 miles per hour" || userAnswer === "460 mph" || userAnswer === "460mph" || userAnswer === "four hundred and sixty miles per hour" || userAnswer === "four hundred sixty") {
+    if (userAnswer === "45" || userAnswer === "fortyfive" || userAnswer === "forty five" || userAnswer === "forty-five") {
         Q2Check = true;
         checkCompletion();
         
@@ -160,7 +160,7 @@ function checkAnswerQ3() {
     var userAnswer = document.getElementById("userAnswerQ3").value.trim().toLowerCase();
     var result = document.getElementById("result3");
 
-    if (userAnswer === "blue" || userAnswer === "wind speed 1" || userAnswer === "1") {
+    if (userAnswer === "headquarters") {
         Q3Check = true;
         checkCompletion();
         
