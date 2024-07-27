@@ -283,7 +283,7 @@ function checkAnswerQ6() {
 // Question 7
 ////////////////////////////////////////////////
 var keyInputQ7 = document.getElementById("userAnswerQ7");
-keyInputQ1.addEventListener("keypress", function(event) {
+keyInputQ7.addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
         event.preventDefault();
         document.getElementById("check-q7").click();
@@ -295,16 +295,16 @@ function checkAnswerQ7() {
     var result = document.getElementById("result7");
 
     if (userAnswer === "326514") {
-        Q1Check = true;
+        Q7Check = true;
         checkCompletion();
         
         result.textContent = "Well done, Agent.";
         result.style.color = "green";
-        keyInputQ1.disabled = true;
-        keyInputQ1.style.background = "#C8E4B2";
+        keyInputQ7.disabled = true;
+        keyInputQ7.style.background = "#C8E4B2";
     } else {
         result.style.color = "red";
-        keyInputQ1.style.background = "#FF7676";
+        keyInputQ7.style.background = "#FF7676";
     }
     result.style.display = "block";
 }
