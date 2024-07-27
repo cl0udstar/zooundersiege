@@ -364,7 +364,7 @@ function placeLetter(details) {
             placedCorrectlyNo += 1;
 
             if (placedCorrectlyNo === 10) {
-                result.textContent = "Nice work, Agent! It seems the combination is close to being cracked!";
+                result.textContent = "Nice work, Agent! One step closer to cracking the combination!";
                 result.style.color = "green";
                 result.style.display = "block";
             }
@@ -401,8 +401,8 @@ function checkAnswerQ1() {
     var userAnswer = document.getElementById("userAnswerStep3").value.trim().toUpperCase();
     var result = document.getElementById("resultStep3");
 
-    if (userAnswer === "SFHFKDIXFO") {
-        result.textContent = "Nice work, Agent! It seems the combination is close to being cracked!";
+    if (userAnswer === "FEGABHJCID") {
+        result.textContent = "Well done, Agent! You're nearly there with the combination!";
         result.style.color = "green";
         keyInputQ1.disabled = true;
         keyInputQ1.style.background = "#C8E4B2";
