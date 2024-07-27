@@ -47,7 +47,7 @@ const arrayData = [
         color: "linear-gradient(-135deg, #ec8f5e, #f1eb90)",
         imageWidth: "300px",
         imageHeight: "350px",
-        para: "Next, we must get zoo wide IOT system back operational, so that the sensor readings can inform the keepers what is happening.",
+        para: "The Zoo’s sensors have been damaged. We need your help to quickly choose which sensors would be best to replace them.",
         link: "../puzzles/puzzle-4.html",
         lock: "lock4",
         frontFeatures: "front4"
