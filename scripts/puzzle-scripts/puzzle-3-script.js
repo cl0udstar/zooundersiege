@@ -294,6 +294,8 @@ function next(){
     document.getElementById("quiz-container").style.display = "none";
     document.getElementById("input-container").style.display = "none";
     document.getElementById("checkCoordinates").style.display = "none";
+    document.getElementById("title1").style.display = "none";
+    document.getElementById("title2").style.display = "none";
     document.getElementById("throw3").style.display = "none";
     document.getElementById("next3").style.display = "none";
     document.getElementById("alertMessage").style.display = "none";
