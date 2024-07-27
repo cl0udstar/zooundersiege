@@ -304,6 +304,7 @@ function checkAnswerQ7() {
         keyInputQ7.disabled = true;
         keyInputQ7.style.background = "#C8E4B2";
     } else {
+        result.textContent = "Incorrect, Try Again Agent! ";
         result.style.color = "red";
         keyInputQ7.style.background = "#FF7676";
     }
