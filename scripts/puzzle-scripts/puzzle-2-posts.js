@@ -308,6 +308,7 @@ function checkAnswerQ7() {
     }
     result.style.display = "block";
 }
+
 ////////////////////////////////////////////////
 
 
