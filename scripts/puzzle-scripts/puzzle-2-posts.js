@@ -279,6 +279,38 @@ function checkAnswerQ6() {
 ////////////////////////////////////////////////
 
 
+////////////////////////////////////////////////
+// Question 7
+////////////////////////////////////////////////
+var keyInputQ7 = document.getElementById("userAnswerQ7");
+keyInputQ1.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("check-q7").click();
+    }
+});
+
+function checkAnswerQ7() {
+    var userAnswer = document.getElementById("userAnswerQ7").value.trim().toLowerCase();
+    var result = document.getElementById("result7");
+
+    if (userAnswer === "326514") {
+        Q1Check = true;
+        checkCompletion();
+        
+        result.textContent = "Well done, Agent.";
+        result.style.color = "green";
+        keyInputQ1.disabled = true;
+        keyInputQ1.style.background = "#C8E4B2";
+    } else {
+        result.style.color = "red";
+        keyInputQ1.style.background = "#FF7676";
+    }
+    result.style.display = "block";
+}
+////////////////////////////////////////////////
+
+
 ////////////////////////////////////////////////////////////
 // Functions for showing the image bigger and smaller
 ////////////////////////////////////////////////////////////
@@ -296,7 +328,7 @@ function hideBigImage() {
 ////////////////////////////////////////////////////////////
 
 function checkCompletion() {
-    if (Q1Check && Q2Check && Q3Check && Q4Check && Q5Check && Q6Check) {
+    if (Q1Check && Q2Check && Q3Check && Q4Check && Q5Check && Q6Check && Q7Check) {
         setPuzzleCompletionStatus(2, 'complete');
         var nextPuzzle = document.getElementById("next-puzzle");
         nextPuzzle.style.display = "block";
