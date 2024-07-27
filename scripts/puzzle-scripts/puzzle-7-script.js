@@ -4,9 +4,9 @@ let currentStep = 0;
 let currentLevel = 1;
 const MAX_STEPS = 7; // Define the maximum number of steps
 let flashData = []; // Array to store flash data
-const orignalWords = ["The", "Secret", "Meeting", "Location", "Is", "Wolfskog", "Castle"];
-const words = ["The", "Secret", "Meeting", "Location", "Is", "Wolfskog", "Castle"];
-const random_words = ["A", "Fjordhelm", "Medium", "Dragonfjell", "Agent", "Viking", "Briefing", "Ship", "Helmet", "Data", "Axe", "Evil", "When", "11:00", "Plan", "Major X", "Area", "Travel", "Storm", "Road", "Tower"];
+const orignalWords = ["New", "firewall", "code", "is", "changed", "to", "AF!4657!@"];
+const words = ["New", "firewall", "code", "is", "changed", "to", "AF!4657!@"];
+const random_words = ["feeding", "humidity", "to", "bird", "times", "mineral", "sensor", "seed", "CO2", "IOT", "airway", "ppm", "had", "aviary", "TP99", "temperature", "chicken", "never", "duck", "GH143!", "fall"];
 let errorCount = 0;
 
 shuffleArray(words);
