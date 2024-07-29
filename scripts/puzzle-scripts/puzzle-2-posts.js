@@ -80,7 +80,7 @@ var Q3Check = false;
 var Q4Check = false;
 var Q5Check = false;
 var Q6Check = false;
-var Q7Check = false
+var Q7Check = false;
 
 ////////////////////////////////////////////////
 // Question 1
