@@ -4,46 +4,11 @@
 
 /* CSS for styling the graph container */
 #graph-container {
-    width: 600px;
+    width: 900px;
     height: 500px;
     position: relative;
     margin: 100px auto 0px auto;
     /* border: 1px solid white;  */
-}
-
-/* CSS for styling the points */
-.point {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: blue;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-/* CSS for styling the lines */
-.line {
-    stroke: black;
-    stroke-width: 2px;
-}
-
-/* CSS for styling the text */
-.text {
-    font-size: 12px;
-    fill: black;
-    text-anchor: middle;
-}
-
-/* CSS for styling the grid lines */
-.grid-line {
-    stroke: lightgrey;
-}
-
-
-.answer_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .check-btn {
@@ -58,16 +23,9 @@
     box-shadow: 0 0 20px 2px #B4B4B8;
 }
 
-.puzzle-q1, .puzzle-q2, .puzzle-q3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px 0 20px;
-}
-
 .puzzle-q1 p, .puzzle-q2 p, .puzzle-q3 p {
     text-align: center;
+    margin-top: 20px;
 }
 
 .puzzle-q1 #result1, .puzzle-q2 #result2, .puzzle-q3 #result3 {
@@ -76,7 +34,9 @@
 }
 
 .q-answer {
-    padding: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px
 }
 
 .user-input {
