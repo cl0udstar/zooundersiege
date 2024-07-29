@@ -129,6 +129,10 @@ const functionCards = () => {
                                             <audio id="audio'+data.cardNum+'" src="'+data.audioSrc+'" preload="auto"></audio>\
                                         </div>\
                                     </div>';
+        // Add event listener for audio end
+        document.getElementById('audio' + data.cardNum).addEventListener('ended', function() {
+            document.getElementById('play-pause-btn' + data.cardNum).innerHTML = '<i class="fa-solid fa-volume-mute"></i>';
+        });
     })
 }
 
