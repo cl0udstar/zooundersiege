@@ -100,7 +100,7 @@ function checkAnswerQ1() {
     var userAnswer = document.getElementById("userAnswerQ1").value.trim().toLowerCase();
     var result = document.getElementById("result1");
 
-    if (userAnswer === "beta") {
+    if (userAnswer === "beta" || userAnswer === "brand beta") {
         Q1Check = true;
         checkCompletion();
         
